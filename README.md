@@ -8,7 +8,7 @@
 
 ## usage
 
-In your module/plugin's `package.json`, define your `peerDependencies` as normal but include this `peerdep` script:
+Install with `npm install peerdep --save` and then in your module/plugin's `package.json`, define your `peerDependencies` as normal but include this `peerdep` install script:
 
 ```json
 {
@@ -19,6 +19,9 @@ In your module/plugin's `package.json`, define your `peerDependencies` as normal
   },
   "peerDependencies": {
     "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "peerdep": "~0.1.0"
   }
 }
 ```
@@ -42,6 +45,9 @@ The first argument of the `peerdep` script is an alternate key if you want to av
   },
   "myPeerDependencies": {
     "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "peerdep": "~0.1.0"
   }
 }
 ```
