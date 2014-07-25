@@ -1,0 +1,35 @@
+{
+  "name": "peerdep",
+  "version": "0.1.0",
+  "description": "An alternative peer dependency warning system",
+  "main": "index.js",
+  "bin": {
+    "peerdep": "bin/peerdep"
+  },
+  "scripts": {
+    "test": "bin/peerdep testPeerDependencies"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/peerdep"
+  },
+  "keywords": [
+    "peerdeps",
+    "peer",
+    "dependencies"
+  ],
+  "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shama/peerdep/issues"
+  },
+  "homepage": "https://github.com/shama/peerdep",
+  "testPeerDependencies": {
+    "grunt": "^0.4.1"
+  },
+  "dependencies": {
+    "npmlog": "^0.1.1",
+    "parents": "^1.0.0",
+    "semver": "^3.0.1"
+  }
+}
